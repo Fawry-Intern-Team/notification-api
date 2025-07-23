@@ -12,7 +12,7 @@ import org.springframework.context.annotation.Configuration;
 public class RabbitMQConfig {
     @Bean
     public Queue orderQueue() {
-        return new Queue("order-queue");
+        return new Queue("notification-queue");
     }
 
     @Bean
